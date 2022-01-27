@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位水平居中垂直居中</title>
+    <style>
+        .box {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+            background-color: blue;
+        }
+        
+        .center {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="center"></div>
+    </div>
+
+</body>
+
+</html>

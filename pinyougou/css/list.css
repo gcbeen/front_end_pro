@@ -1,0 +1,148 @@
+.header .sk {
+    position: absolute;
+    top: 15px;
+    left: 190px;
+    width: 70px;
+    padding-left: 13px;
+    border-left: 1px solid #b1191a;
+}
+
+.nav .sk_list,
+.nav .sk_con,
+.nav li {
+    float: left;
+}
+
+.sk_list li a {
+    display: block;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 30px;
+    color: #000;
+    font-size: 16px;
+}
+
+.sk_con li a {
+    display: block;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 23px;
+    color: #666;
+    font-size: 14px;
+}
+
+.sk_con li:last-child a::after {
+    margin-left: 3px;
+    font-family: 'icomoon';
+    content: '\e905';
+}
+
+.sk_con li a:hover,
+.sk_con li a.active {
+    color: #b1191a;
+}
+
+.sk_container .sk_bd {
+    margin-top: 25px;
+}
+
+.sk_container .sk_bd ul {
+    width: 1215px;
+}
+
+.sk_container .sk_bd li {
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin: 0 13px 10px 0;
+    background-color: #fff;
+}
+
+.sk_container .sk_bd li.active,
+.sk_container .sk_bd li:hover {
+    /* width: 292px; */
+    border: solid 1px #e12228;
+}
+
+.sk_container .sk_bd .product_img {
+    text-align: center;
+}
+
+.sk_container .sk_bd .product_info {
+    padding: 7px 13px 0;
+}
+
+.product_info p {
+    color: #333;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 13px;
+}
+
+.product_info .price {
+    margin-bottom: 8px;
+    line-height: 21px;
+}
+
+.product_info .sell_price {
+    color: #e60012;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product_info .sell_price em {
+    font-size: 22px;
+}
+
+.product_info .market_price {
+    color: #a4a4a4;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.product_info .num {
+    margin-bottom: 8px;
+}
+
+.product_info .num .percent {
+    color: #666;
+    font-size: 14px;
+}
+
+.product_info .num .progress {
+    display: inline-block;
+    width: 133px;
+    height: 13px;
+    border: solid 1px #e12228;
+    border-radius: 5px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.product_info .num .progress em {
+    display: block;
+    width: 116px;
+    height: 13px;
+    background-color: #ed282e;
+}
+
+.product_info .num .leave {
+    color: #666;
+    line-height: 21px;
+    font-size: 14px;
+}
+
+.product_info .num .leave em {
+    font-size: 16px;
+}
+
+.sk_container .sk_bd a {
+    display: block;
+    width: 100%;
+    height: 51px;
+    background-color: #b1191a;
+    color: #fff;
+    line-height: 51px;
+    font-size: 20px;
+    text-align: center;
+}

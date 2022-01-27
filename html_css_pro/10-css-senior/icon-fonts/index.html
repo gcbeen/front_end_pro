@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标</title>
+    </title>
+
+    <style>
+        @font-face {
+            /* 图标字体名称 */
+            font-family: 'icomoon';
+            /* 一定注意字体文件路径的问题。  */
+            /* eot图标字体库 IE专用 */
+            src: url('fonts/icomoon.eot?7kkyc2');
+            src: url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'), /* ttf图标字体库 最常见的字体 */
+            url('fonts/icomoon.ttf?7kkyc2') format('truetype'), /* woff 图标字体库 web开放字体 */
+            url('fonts/icomoon.woff?7kkyc2') format('woff'), /* svg 图标字体库 */
+            url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        span {
+            /*  给标签定义字体 */
+            font-family: "icomoon";
+            font-size: 100px;
+            color: blue;
+        }
+        
+        [class^="icon-"],
+        [class*=" icon-"] {
+            /* use !important to prevent issues with browser extensions that change fonts */
+            font-family: 'icomoon' !important;
+            /* speak: never; */
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            /* Better Font Rendering =========== */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .icon-home2:before {
+            content: "\e901";
+        }
+        
+        .icon-location2:before {
+            content: "\e948";
+        }
+        
+        .icon-spinner:before {
+            content: "\e97a";
+        }
+        
+        .icon-camera:before {
+            content: "\e90f";
+        }
+        
+        .icon-file-music:before {
+            content: "\e928";
+        }
+        
+        .icon-location:before {
+            content: "\e947";
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <span class="icon-home2"></span>
+    <span class="icon-location2"></span>
+    <span class="icon-spinner"></span>
+
+    <span class="icon-camera"></span>
+    <span class="icon-file-music"></span>
+    <span class="icon-location"></span>
+</body>
+
+</html>

@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+    /* height: 3000px; */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 清除浮动 */
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+}
+
+
+/* 导航栏模块 */
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+
+/* 搜索模块 */
+
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 65px;
+}
+
+.search input {
+    float: left;
+    width: 340px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    font-size: 14px;
+    color: #bfbfbf;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: none;
+    background: #00a4ff url(images/fa-search.png) no-repeat center;
+}
+
+
+/* 用户模块 */
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.user img {
+    vertical-align: middle;
+}
+
+
+/* banner模块 */
+
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 421px;
+    background: url(images/banner2.png) no-repeat top center;
+}
+
+
+/* 侧导航栏模块 */
+
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.subnav ul {
+    padding: 7px 0;
+}
+
+.subnav li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.subnav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #fff;
+}
+
+.subnav a span {
+    float: right;
+}
+
+.subnav a:hover {
+    color: #00a4ff;
+}
+
+
+/* 课程表模块 */
+
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.course h2 {
+    height: 48px;
+    line-height: 48px;
+    background-color: #9bceea;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.course .bd {
+    padding: 0 20px;
+}
+
+.course li {
+    padding: 13px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.course h4 {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.course h4 strong {
+    font-size: 16px;
+    /* color: #4e4e4e; */
+}
+
+.course p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.course .more {
+    display: block;
+    height: 38px;
+    margin-top: 5px;
+    line-height: 38px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* 精品推荐区 */
+
+.goods {
+    height: 60px;
+    margin-top: 10px;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    background-color: #fff;
+    line-height: 60px;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.goods h3 {
+    float: left;
+    margin-left: 30px;
+    color: #00a4ff;
+    font-size: 16px;
+}
+
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+
+.goods li {
+    float: left;
+}
+
+.goods li a {
+    padding: 0 30px;
+    border-left: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #050505;
+}
+
+.goods .mod {
+    float: right;
+    margin-right: 30px;
+    color: #00a4ff;
+    font-size: 14px;
+}
+
+
+/* 精品推荐核心区 */
+
+.box {
+    margin-top: 30px;
+}
+
+.box-hd {
+    height: 42px;
+}
+
+.box-hd h3 {
+    float: left;
+    color: #494949;
+    font-size: 20px;
+}
+
+.box-hd a {
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.box-bd ul {
+    width: 1215px;
+}
+
+.box-bd li {
+    float: left;
+    position: relative;
+    width: 230px;
+    height: 270px;
+    margin-right: 13px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.box-bd li img {
+    width: 100%;
+}
+
+.box-bd li h4 {
+    margin: 20px 20px 20px 25px;
+    color: #050505;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.box-bd li .info {
+    margin: 0 20px 0 25px;
+    color: #999;
+    font-size: 12px;
+}
+
+.box-bd li .info span {
+    color: #ff7c2d;
+    /* font-style: normal; */
+}
+
+.box-bd li em {
+    position: absolute;
+    top: 5px;
+    right: -3px;
+    font-style: normal;
+}
+
+
+/* 编程课程模块 */
+
+.program {
+    margin-top: 30px;
+}
+
+.program-hd {
+    height: 42px;
+}
+
+.program-hd h3 {
+    float: left;
+    color: #494949;
+    font-size: 20px;
+}
+
+.program-hd ul {
+    float: left;
+    margin-left: 320px;
+}
+
+.program-hd li {
+    float: left;
+    padding: 0 30px;
+}
+
+.program-hd>a {
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.program-hd li a {
+    color: #868686;
+    font-size: 16px;
+}
+
+.program-hd li a:hover {
+    color: #00a4ff;
+}
+
+.program-bd>img {
+    float: left;
+    width: 230px;
+    /* height: 100%; */
+    margin-right: 13px;
+    margin-bottom: 15px;
+}
+
+.program-bd .program-course {
+    float: left;
+    /* height: 392px; */
+    width: 955px;
+}
+
+.program-course>img {
+    width: 100%;
+}
+
+.program-course ul {
+    margin-top: 20px;
+    /* width: 957px; */
+    width: 972px;
+    /* background-color: pink; */
+}
+
+.program-course li {
+    float: left;
+    width: 230px;
+    height: 270px;
+    margin-right: 13px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.program-course li img {
+    width: 100%;
+}
+
+.program-course li h4 {
+    margin: 20px 20px 20px 25px;
+    color: #050505;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.program-course li .info {
+    margin: 0 20px 0 25px;
+    color: #999;
+    font-size: 12px;
+}
+
+.program-course li .info em {
+    color: #ff7c2d;
+    font-style: normal;
+}
+
+
+/* 前端工程师模块 */
+
+.frontend {
+    margin-top: 30px;
+}
+
+.frontend-hd {
+    height: 42px;
+}
+
+.frontend-hd h3 {
+    float: left;
+    color: #494949;
+    font-size: 20px;
+}
+
+.frontend-hd ul {
+    float: left;
+    margin-left: 320px;
+}
+
+.frontend-hd li {
+    float: left;
+    padding: 0 30px;
+}
+
+.frontend-hd>a {
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.frontend-hd li a {
+    color: #868686;
+    font-size: 16px;
+}
+
+.frontend-hd li a:hover {
+    color: #00a4ff;
+}
+
+.frontend-bd ul {
+    width: 1215px;
+}
+
+.frontend-bd li {
+    float: left;
+    width: 230px;
+    height: 270px;
+    margin-right: 13px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.frontend-bd li img {
+    width: 100%;
+}
+
+.frontend-bd li h4 {
+    margin: 20px 20px 20px 25px;
+    color: #050505;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.frontend-bd li .info {
+    margin: 0 20px 0 25px;
+    color: #999;
+    font-size: 12px;
+}
+
+.frontend-bd li .info em {
+    color: #ff7c2d;
+    font-style: normal;
+}
+
+
+/* footer模块 */
+
+.footer {
+    height: 415px;
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.footer .w {
+    padding-top: 35px;
+}
+
+.copyright {
+    float: left;
+}
+
+.copyright p {
+    margin: 25px 0 15px;
+    color: #666;
+    font-size: 12px;
+}
+
+.copyright .app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #00a4ff;
+    line-height: 33px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.links {
+    float: right;
+}
+
+.links dl {
+    float: left;
+    margin-left: 100px;
+}
+
+.links dt {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 16px;
+}
+
+.links dd a {
+    /* padding-bottom: 5px; */
+    color: #333;
+    font-size: 12px;
+}
+
+
+/* 
+css 书写顺序
+1.布局定位样式: display/position/float/clear/visibility/overflow
+2.自身属性样式: width/height/margin/padding/border/background
+3.文本属性样式: color/font/text-decoration/text-align/vertical-align/white-space/break-word
+4.其他属性样式: content/cursor/border-radius/box-shadow/text-shadow/background:linear-gradient 
+*/
+
+
+/*
+页面布局整体思路
+1.确定页面版心(可视区)宽度
+2.分析页面中的行模块，行模块中的列模块,页面布局第一准则
+3.一行中列模块经常用浮动布局，先确定每个列的大小再确定列的位置，页面布局第二准则
+4.制作HTML结构，先有结构后有样式,结构永远是最重要的
+5.先理清布局结构，再写代码。这需要多写多积累
+*/

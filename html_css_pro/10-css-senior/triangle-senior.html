@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角</title>
+
+    <style>
+        /* 只有border的一个盒子 */
+        
+        .triangle {
+            width: 0;
+            height: 0;
+            margin: 10px auto;
+            line-height: 0;
+            font-size: 0;
+            border: 50px solid transparent;
+            border-left-color: pink;
+        }
+        
+        .two-triangle {
+            width: 0;
+            height: 0;
+            margin: 10px auto;
+            line-height: 0;
+            font-size: 0;
+            /* 上 右 下 左 边框颜色 */
+            /* border-color: transparent green blue pink; */
+            border-style: solid;
+            /* 上 右 下 左 边框宽度 */
+            /* border-width: 220px 80px 110px 40px; */
+            /* 上 右 下 左 边框颜色 */
+            border-color: transparent red transparent pink;
+            /* 上 右 下 左 边框宽度 */
+            border-width: 66px 24px 0;
+        }
+        
+        .triangle-plus {
+            width: 0;
+            height: 0;
+            margin: 10px auto;
+            line-height: 0;
+            font-size: 0;
+            /* 上 右 下 左 边框颜色 */
+            border-color: transparent red transparent transparent;
+            border-style: solid;
+            /* 上 右 下 左 边框宽度 */
+            border-width: 66px 24px 0 0;
+        }
+        
+        .price {
+            width: 160px;
+            height: 24px;
+            border: 1px solid red;
+            margin: 10px auto;
+            line-height: 24px;
+        }
+        
+        .price .discount {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .price .discount em {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 0;
+            height: 0;
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+            border-width: 24px 10px 0 0;
+            font-style: normal;
+        }
+        
+        .price .origin {
+            float: left;
+            padding-left: 12px;
+            font-size: 12px;
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="triangle"></div>
+    <div class="two-triangle"></div>
+    <div class="triangle-plus"></div>
+
+    <div class="price">
+        <span class="discount">¥1650<em></em></span>
+        <span class="origin">¥5650</span>
+    </div>
+</body>
+
+</html>

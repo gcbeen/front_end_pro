@@ -1,0 +1,458 @@
+/* 
+main 主体模块是 index 里面专有的，
+注意需要新的样式文件 index.css 。 
+*/
+
+
+/* 
+main 盒子
+宽度为 980 像素，
+位置距离左边 220px (margin-left ) ，
+给高度就不用清除浮动
+main 里面包含左侧盒子，左浮动，focus 焦点图模块
+main 里面包含右侧盒子，右浮动，newsflash 新闻快报模块
+ */
+
+.main {
+    width: 980px;
+    height: 466px;
+    margin-left: 220px;
+    padding-top: 10px;
+}
+
+.main .focus {
+    float: left;
+}
+
+
+/* 
+newsflash 新闻快报模块
+1 号盒子为 news 新闻模块 高度为 165px
+2 号盒子为 lifeservice 生活服务模块 高度为 209px
+3 号盒子为 bargain 特价商品
+
+news 新闻模块
+注意：这里我们分为上下两个模块，但是两个模块都用 div 
+1 号盒子 news-hd 新闻头部模块，给一个高度和下边框
+2 号盒子 news-bd 新闻主题部分，里面包含 ul 和 li 还有链接
+
+lifeservice 生活服务模块
+lifeservice 盒子宽度为 250 ，但是装不开里面的 4 个小 li 
+可以让 lifeservice 里面的 ul 宽度为 252，就可以装的下 4 个 小 li
+lifeservice 盒子 overflow 隐藏多余的部分就可以了
+ */
+
+.main .newsflash {
+    float: right;
+    width: 250px;
+    height: 454px;
+}
+
+.newsflash .news {
+    width: 100%;
+    height: 163px;
+    border: 1px solid #e4e4e4;
+}
+
+.news .news_hd {
+    height: 32px;
+    padding-left: 16px;
+    border-bottom: 1px dotted #e8e8e8;
+    line-height: 31px;
+}
+
+.news .news_hd h5 {
+    float: left;
+    height: 100%;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.news .news_hd .more {
+    display: block;
+    float: right;
+    font-size: 14px;
+}
+
+.news .news_hd .more::after {
+    font-family: 'icomoon';
+    content: '\e907';
+}
+
+.news .news_bd {
+    padding: 6px 0 6px 16px;
+}
+
+.news .news_bd a {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.news .news_bd a strong {
+    margin-right: 5px;
+}
+
+.newsflash .lifeservice {
+    width: 100%;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.lifeservice ul,
+.lifeservice li {
+    float: left;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice li a {
+    display: block;
+    width: 63px;
+    height: 70px;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.lifeservice li a i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -17px -14px;
+}
+
+.lifeservice li:nth-child(4n+2) a i {
+    background-position-x: -78px;
+}
+
+.lifeservice li:nth-child(4n+3) a i {
+    background-position-x: -140px;
+}
+
+.lifeservice li:nth-child(4n+4) a i {
+    background-position-x: -206px;
+}
+
+.lifeservice li:nth-child(n+5) a i {
+    background-position-y: -85px;
+}
+
+.lifeservice li:nth-child(n+9) a i {
+    background-position-y: -157px;
+}
+
+.newsflash .bargain {
+    margin-top: 6px;
+}
+
+
+/* 
+大盒子 recom 推荐模块 recommend
+里面包含 2 个盒子， 浮动即可
+1 号盒子 recom_hd
+2 号盒子 recom_bd ，注意里面的小竖线
+ */
+
+.recom {
+    width: 1202px;
+    height: 163px;
+    margin-top: 12px;
+    /* overflow: hidden; */
+}
+
+.recom .recom_hd {
+    float: left;
+    width: 206px;
+    height: 163px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom .recom_bd {
+    float: left;
+    width: 996px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+
+.recom_bd ul,
+.recom_bd li {
+    float: left;
+}
+
+.recom_bd li a {
+    display: block;
+    width: 249px;
+}
+
+.recom_bd li a img {
+    width: 100%;
+    height: 163px;
+}
+
+.recom_bd li:nth-child(-n+3) {
+    position: relative;
+}
+
+.recom_bd li:nth-child(-n+3)::after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+
+/* 猜你喜欢 */
+
+.favor {
+    height: 281px;
+    margin-top: 26px;
+}
+
+.favor .box_hd {
+    height: 33px;
+}
+
+.favor .box_hd h3 {
+    float: left;
+    color: #333;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.favor .box_hd span {
+    float: right;
+    color: #666;
+    line-height: 33px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.favor .box_hd span::after {
+    display: inline-block;
+    font-family: 'icomoon';
+    content: "\ea2e";
+    width: 14px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    margin: 10px 5px;
+}
+
+.favor .box_bd {
+    height: 233px;
+    background-color: #fff;
+    border: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.favor .box_bd ul {
+    width: 1202px;
+}
+
+.favor .box_bd li {
+    float: left;
+    width: 200px;
+}
+
+.favor .box_bd a {
+    display: block;
+    width: 100%;
+    height: 164px;
+    line-height: 164px;
+    text-align: center;
+}
+
+.favor .box_bd div {
+    width: 100%;
+    height: 63px;
+    border-right: 1px dotted #ededed;
+    margin-bottom: 10px;
+    padding: 0 36px;
+}
+
+.favor .box_bd p {
+    color: #666;
+    font-size: 12px;
+}
+
+.favor .box_bd span {
+    color: #df3033;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.favor .box_bd span em {
+    font-size: 18px;
+}
+
+
+/* 
+注意这个 floor ，不要给高度，内容有多少，算多少
+第一楼是家用电器模块： 里面包含两个盒子
+1 号盒子 box_hd，给一个高度，有个下边框，里面分为左右 2 个盒子
+2 号盒子 box_bd，不要给高度
+ */
+
+.floor .w {
+    margin-top: 28px;
+}
+
+.floor .box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.floor .box_hd h3 {
+    float: left;
+    height: 30px;
+    /* line-height: 30px; */
+    color: #c81623;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.floor .box_hd ul {
+    float: right;
+}
+
+.floor .box_hd li {
+    float: left;
+    color: #666;
+}
+
+.floor .box_hd li a {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #999;
+    font-size: 12px;
+}
+
+.floor .box_hd li a:hover,
+.floor .box_hd li a.active {
+    color: #c81623;
+}
+
+.floor .tab_list_item {
+    height: 361px;
+}
+
+.floor .tab_content .tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.floor .tab_list_item .col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+}
+
+.floor .tab_list_item ul {
+    float: left;
+    padding: 5px 8px 0;
+}
+
+.floor .tab_list_item li {
+    float: left;
+    width: 50%;
+    padding: 0 8px;
+}
+
+.floor .tab_list_item li a {
+    display: block;
+    width: 100%;
+    height: 32px;
+    border-bottom: 1px solid #ededed;
+    line-height: 32px;
+    text-align: center;
+}
+
+.floor .tab_list_item .col_210 img {
+    width: 210px;
+    height: 265px;
+}
+
+.floor .tab_list_item .col_329 {
+    width: 329px;
+    /* background-color: #aed6d8; */
+}
+
+.floor .tab_list_item .col_329 img {
+    width: 100%;
+    height: 361px;
+}
+
+.floor .tab_list_item .col_221 {
+    width: 221px;
+}
+
+.floor .tab_list_item .col_219 {
+    width: 219px;
+}
+
+.floor .tab_list_item div.row {
+    border-right: 1px solid #ededed;
+}
+
+.floor .tab_list_item div.row a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #ededed;
+}
+
+.floor .tab_list_item .row img {
+    width: 100%;
+    height: 100%;
+}
+
+.floor .tab_list_item .row.row_2 a {
+    height: 50%;
+}
+
+.floor .brand {
+    height: 65px;
+}
+
+.floor .brand li {
+    float: left;
+    position: relative;
+    width: 10%;
+}
+
+.floor .brand li:nth-child(-n+9)::after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 45px;
+    /* background-color: #ccc; */
+    border-right: 1px dotted #ccc;
+}
+
+.floor .brand li a {
+    display: block;
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+}
+
+.floor .brand li img {
+    width: 100%;
+    height: 100%;
+}

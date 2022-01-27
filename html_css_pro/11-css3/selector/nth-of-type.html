@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-of-type 选择器</title>
+    <style>
+        ul li:first-of-type,
+        ul li:last-of-type {
+            background-color: green;
+        }
+        
+        ul li:nth-of-type(even) {
+            background-color: blue;
+        }
+        /* 
+        nth-child 会把所有的盒子都排列序号 
+          执行的时候
+          首先看  :nth-child(1) 之后
+          回去看 前面 div 
+          */
+        
+        section div:first-child {
+            background-color: red;
+        }
+        /* 
+        nth-of-type 会把指定元素的盒子排列序号 
+         执行的时候
+         首先看  div指定的元素  之后
+         回去看 :nth-of-type(1) 第几个孩子 */
+        
+        section div:first-of-type {
+            background-color: green;
+        }
+        
+        section div:nth-child(3) {
+            background-color: red;
+        }
+        
+        section div:nth-of-type(3) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+    <section>
+        <p>光头强-p</p>
+        <div>熊大-div</div>
+        <div>熊二-div</div>
+
+        <p>佩奇-p</p>
+        <div>悟空-div</div>
+        <div>八戒-div</div>
+    </section>
+</body>
+
+</html>

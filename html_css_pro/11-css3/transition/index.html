@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过度效果</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /* transition: 变化的属性 花费时间 运动曲线 何时开始; */
+            /* transition: width .5s ease 0s, height .5s ease 1s; */
+            /* 如果想要写多个属性，利用逗号进行分割 */
+            /* transition: width .5s, height .5s; */
+            /* 如果想要多个属性都变化，属性写all就可以了 */
+            /* transition: height .5s ease 1s; */
+            /* 谁做过渡，给谁加 */
+            transition: all 0.5s;
+        }
+        
+        .box:hover {
+            width: 400px;
+            height: 400px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
