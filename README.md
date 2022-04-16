@@ -48,5 +48,6 @@ https://gcbeen.github.io/front_end_pro/mobile_h5/layout_flex_rem_less_flexible/i
 
 https://gcbeen.github.io/front_end_pro/mobile_h5/layout_percent/h5_pro/index.html
 
+#### vue mall pro
 
-
+https://gcbeen.github.io/front_end_pro/vue_mall_dist/index.html
