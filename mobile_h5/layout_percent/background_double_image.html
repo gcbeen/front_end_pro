@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片2倍图</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid green;
+            margin: 5px;
+            background: url(img/apple50.jpg) no-repeat;
+        }
+        
+        .double_img {
+            /* 1. 我们有一个 50 * 50的盒子需要一个背景图片，但是根据分析这个图片还是要准备2倍， 100*100 */
+            /* 2. 我们需要把这个图片缩放一半，也就是 50*50  background-size*/
+            background: url(img/apple100.jpg) no-repeat;
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="double_img"></div>
+</body>
+
+</html>

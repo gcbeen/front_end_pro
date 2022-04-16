@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 布局 flex设置侧轴上的子元素排列方式 </title>
+    <style>
+        div {
+            display: flex;
+            width: 800px;
+            height: 400px;
+            background-color: green;
+            /* 
+            换行 wrap
+            不换行 nowrap
+             */
+            flex-wrap: wrap;
+            /* 因为有了换行，此时我们侧轴上控制子元素的对齐方式我们用 align-content */
+            /* align-content: flex-start; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            align-content: space-around;
+        }
+        
+        div span {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>a</span>
+        <span>b</span>
+        <span>c</span>
+        <span>d</span>
+        <span>e</span>
+        <span>f</span>
+    </div>
+</body>
+
+</html>

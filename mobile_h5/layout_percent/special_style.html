@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特殊样式</title>
+
+    <style>
+        div {
+            /* css3 盒子模型 */
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            /* 清除 点击高亮 背景样式 设置为完全透明 transparent */
+            -webkit-tap-highlight-color: transparent;
+            /* 去除 移动端浏览器默认的外观样式 在ios上加上这个属性才能给按钮和输入框自定义样式 */
+            -webkit-appearance: none;
+            /* 禁用长按页面时弹出菜单 */
+            -webkit-touch-callout: none;
+        }
+        
+        a {
+            /* 清除 点击高亮 样式 设置为完全透明 transparent */
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        input {
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">前端</a>
+
+    <input type="button" value="按钮">
+</body>
+
+</html>

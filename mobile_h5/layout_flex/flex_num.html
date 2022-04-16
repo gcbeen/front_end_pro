@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 布局 flex子项flex份数</title>
+    <style>
+        section {
+            display: flex;
+            width: 80%;
+            height: 150px;
+            background-color: green;
+            margin: 0 auto;
+        }
+        
+        section div:nth-child(1) {
+            width: 100px;
+            height: 150px;
+            background-color: #ccc;
+        }
+        
+        section div:nth-child(2) {
+            flex: 1;
+            background-color: green;
+        }
+        
+        section div:nth-child(3) {
+            width: 100px;
+            height: 150px;
+            background-color: #eee;
+        }
+        
+        p {
+            display: flex;
+            width: 80%;
+            height: 150px;
+            background-color: #ccc;
+            margin: 30px auto;
+        }
+        
+        p span {
+            flex: 1;
+        }
+        
+        p span:nth-child(2) {
+            flex: 2;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <p>
+        <span>a</span>
+        <span>b</span>
+        <span>c</span>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.header {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+.header a {
+  color: red;
+}
+.header a:hover {
+  color: blue;
+}
+.nav {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+}
+.nav .logo {
+  color: green;
+}
+.nav::before {
+  content: "";
+}

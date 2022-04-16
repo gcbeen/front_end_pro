@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 布局 flex设置侧轴上的子元素排列方式 </title>
+    <style>
+        div {
+            display: flex;
+            width: 800px;
+            height: 400px;
+            background-color: green;
+            /* 默认的主轴是 x 轴 row */
+            /* 主轴设置为 Y 轴 */
+            flex-direction: column;
+            /* 主轴居中对齐 */
+            justify-content: center;
+            /* 我们需要一个侧轴居中 */
+            /* 拉伸，但是子盒子不要给高度 */
+            /* X轴是主轴，Y轴是侧轴 子盒子不要给高度 */
+            /* Y轴是主轴，X轴是侧轴 子盒子不要给宽度 */
+            /* align-items: stretch; */
+            /* 侧轴居中对齐 */
+            align-items: center;
+            /* align-content: center; */
+        }
+        
+        div span {
+            /* flex: 1; */
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>a</span>
+        <span>b</span>
+        <span>c</span>
+    </div>
+</body>
+
+</html>

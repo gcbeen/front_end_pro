@@ -1,0 +1,270 @@
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #f2f4f7;
+  }
+  a {
+    text-decoration: none;
+    color: #707070;
+  }
+
+  // 约束当屏幕大于 750px 的时候，html字体大小就不不变化了
+  // 宽750的屏幕。
+  // 并非iphone 6/7/8。
+  // iphone 6/7/8 375
+  // 此项目 将屏幕分成了20份
+  // 在 iphone 6/7/8 375 下 font-size: 18.75px
+  // 在 750的屏幕 下 font-size: 37.5px
+  @media screen and (min-width: 750px) {
+    html {
+      font-size: 37.5px !important;
+    }
+  }
+// wrap
+.wrap {
+    padding-bottom: 1.146667rem /* 21.5/18.75 */;
+    background-color: #fff;
+}
+
+// 头部
+.header {
+  height: 2.133333rem /* 40/18.75 */;
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 2.133333rem /* 40/18.75 */;
+  font-size: .933333rem /* 17.5/18.75 */;
+  color: #1c1c1c;
+}
+// 导航模块
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.2rem /* 22.5/18.75 */ 0 1.6rem /* 30/18.75 */ 0;
+  .item {
+   display: flex;
+   // 纵向显示
+   flex-direction: column;
+   // 水平居中
+   align-items: center;
+   width: 33.33%;
+   img {
+     width: 3.733333rem /* 70/18.75 */;
+     height: 3.733333rem /* 70/18.75 */;
+   }
+   span{
+     font-size: .666667rem /* 12.5/18.75 */;
+     color: #707070;
+   }
+   &:nth-child(-n+3) {
+     margin-bottom: 1.653333rem /* 31/18.75 */;
+   }
+  }
+}
+
+// go 模块
+
+.go {
+  margin: 0 .266667rem /* 5/18.75 */ 0 .48rem /* 9/18.75 */;
+}
+.go img {
+  display: block;
+  width: 100%;
+}
+
+// 就业指导模块
+.content {
+  margin-top: .266667rem /* 5/18.75 */;
+  padding: 1.066667rem /* 20/18.75 */ .64rem /* 12/18.75 */;
+  background-color: #fff;
+  .con-hd {
+    display: flex;
+    justify-content: space-between;
+    height: 1.013333rem /* 19/18.75 */;
+    margin-bottom: .906667rem /* 17/18.75 */;
+    line-height: 1.013333rem /* 19/18.75 */;
+    h4 {
+      margin: 0;
+      color: #333;
+      font-size: .746667rem /* 14/18.75 */;
+      .icon {
+        display: inline-block;
+        width: 1.013333rem /* 19/18.75 */;
+        height: 1.013333rem /* 19/18.75 */;
+        vertical-align: middle;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+    .more {
+      font-size: .64rem /* 12/18.75 */;
+      color: #999;
+    }
+  }
+}
+
+
+
+
+
+
+
+.content .job_focus {
+  position: relative;
+
+  .swiper-container {
+    width: 14.4rem /* 270/18.75 */;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.8);
+    opacity: 0.4;
+    a {
+      display: block;
+      width: 9.013333rem /* 169/18.75 */;
+      height: 10.026667rem /* 188/18.75 */;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    p {
+      width: 9.013333rem /* 169/18.75 */;
+      margin-top: .64rem /* 12/18.75 */;
+      font-size: .666667rem /* 12.5/18.75 */;
+      color: #333;
+    }
+  }
+  .swiper-slide-active,.swiper-slide-duplicate-active{
+    transform: scale(1);
+    z-index: 999;
+    opacity: 1;
+  }
+  .swiper-button-next,
+  .swiper-button-prev{
+    outline: none;
+    &::after{
+      font-size: 1.066667rem /* 20/18.75 */;
+      color: #333;
+    }
+  }
+  
+}
+
+// 充电学习模块
+
+.study_con {
+  padding-bottom: 3.733333rem /* 70/18.75 */;
+}
+
+.study {
+
+  width: 100%;
+  height: 100%;
+
+  .study_fo {
+    padding: 0.266667rem;
+  }
+
+  .swiper-slide {
+    width: 7.733333rem /* 145/18.75 */;
+    height: 9.066667rem /* 170/18.75 */;
+    background-color: #fff;
+    font-size: 18px;
+    border-radius: .266667rem /* 5/18.75 */;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Center slide text vertically */
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+    // display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+
+    // -webkit-box-pack: center;
+    // -ms-flex-pack:center;
+    // -webkit-justify-content:center;
+    justify-content: center;
+    // -webkit-box-align: center;
+    // -ms-flex-align: center;
+    // -webkit-align-items:center;
+    align-items: flex-start;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h5 {
+      padding: 0 .266667rem /* 5/18.75 */;
+      margin: .533333rem /* 10/18.75 */ 0;
+      font-weight: 400;
+      font-size: .693333rem /* 13/18.75 */;
+    }
+    p {
+      padding: 0 .266667rem /* 5/18.75 */;
+      font-size: .693333rem /* 13/18.75 */;
+      color: #ff4400;
+    }
+
+  }
+
+}
+
+
+
+
+
+// 页脚tabbar
+
+.footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.933333rem /* 55/18.75 */;
+  padding: .533333rem /* 10/18.75 */;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 999;
+  .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 1.04rem /* 19.5/18.75 */;
+      height: 1.093333rem /* 20.5/18.75 */;
+    }
+    p {
+      margin-top: .266667rem /* 5/18.75 */;
+      color: #666;
+      font-size: .64rem /* 12/18.75 */;
+    }
+  }
+}
+
+

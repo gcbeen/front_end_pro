@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var let 区别</title>
+</head>
+
+<body>
+
+    <button class="var-btn">var btn</button>
+    <button class="var-btn">var btn</button>
+    <button class="var-btn">var btn</button>
+    <button class="let-btn">let btn</button>
+    <button class="let-btn">let btn</button>
+    <button class="let-btn">let btn</button>
+
+    <script>
+        var btn_vars = document.getElementsByClassName('var-btn');
+        let btn_lets = document.getElementsByClassName('let-btn');
+        for (var i = 0; i < btn_vars.length; i++) {
+            (function(i) {
+                btn_vars[i].onclick = function() {
+                    console.log('var btn: ' + i);
+                }
+            })(i);
+        }
+
+        for (let j = 0; j < btn_lets.length; j++) {
+            btn_lets[j].onclick = function() {
+                console.log('let btn: ' + j);
+            }
+        }
+
+        let name = '孙悟空';
+        let age = 500;
+        let obj1 = {
+            name: name,
+            age: age,
+            test: function() {
+                console.log('obj1 的 test 函数');
+            }
+        };
+        console.log(obj1);
+        obj1.test();
+        let obj2 = {
+            // 属性简写
+            name,
+            age,
+            // 方法简写
+            test() {
+                console.log('obj2 的 test 函数');
+            }
+        };
+        console.log(obj2)
+        obj2.test();
+    </script>
+
+</body>
+
+</html>
