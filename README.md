@@ -50,4 +50,10 @@ https://gcbeen.github.io/front_end_pro/mobile_h5/layout_percent/h5_pro/index.htm
 
 #### vue mall pro
 
-https://gcbeen.github.io/front_end_pro/vue_mall_dist/index.html
+https://vue-mall-pro.vercel.app
+
+
+
+### 笔记
+
+https://github.com/gcbeen/front_end_pro/tree/main/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/README.md
